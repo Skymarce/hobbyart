@@ -1,0 +1,63 @@
+.header {
+    height: 45px;
+    background: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 146px 370px 218px;
+        justify-content: space-between;
+    }
+    &__phone {
+        display: grid;
+        grid-template-columns: 14px minmax(124px, auto);
+        column-gap: 8px;
+        align-items: center;
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-number {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FFFFFF;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    &__address {
+        display: grid;
+        grid-template-columns: 10px minmax(352px, auto);
+        column-gap: 8px;
+        &-img {
+            display: flex;
+            align-items: center;
+        }
+        &-location {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+    }
+    &__schedule {
+        display: grid;
+        grid-template-columns: 12.5px minmax(195px, auto);
+        column-gap: 8px;
+        &-img {
+            display: flex;
+            align-items: center;
+        }
+        &-work {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+    }
+}

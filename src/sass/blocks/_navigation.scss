@@ -1,0 +1,114 @@
+.navigation {
+    height: 110px;
+    &__wrapper {
+        padding-top: 45px;
+        height: 62px;
+        display: grid;
+        grid-template-columns: 701px 122px 699px;
+        column-gap: 49px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-items {
+            padding: 0;
+            display: flex;
+        }
+        &-item {
+            margin-right: 21px;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                color: #424242;
+            }
+        }
+    }
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-input {
+                width: 198px;
+                height: 38px;
+                border: 1px solid $second-color;
+                box-sizing: border-box;
+                border-radius: 46px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            input {
+                margin-left: 18px;
+                width: 130px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                color: $second-color;
+                border: none;
+                outline: none;
+            }
+            img {
+                margin-right: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__login {
+        button {
+            width: 101px;
+            height: 38px;
+            border: 1px solid $second-color;
+            box-sizing: border-box;
+            border-radius: 46px;
+            background-color: white;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: $second-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+                margin-right: 6px;
+            }
+        }
+    }
+    &__select {
+        button {
+            position: relative;
+            width: 135px;
+            height: 38px;
+            background-color: white;
+            border: 1px solid $second-color;
+            box-sizing: border-box;
+            border-radius: 46px;
+            color: $second-color;
+            cursor: pointer;
+            img {
+                margin-right: 6px;
+            }
+            @include after_circle
+        }
+    }
+    &__bin {
+        button {
+            position: relative;
+            width: 114px;
+            height: 38px;
+            background-color: white;
+            border: 1px solid $second-color;
+            box-sizing: border-box;
+            border-radius: 46px;
+            color: $second-color;
+            cursor: pointer;
+            img {
+                margin-right: 6px;
+            }
+            @include after_circle-2
+        }
+    }
+}
