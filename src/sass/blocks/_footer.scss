@@ -1,0 +1,106 @@
+.footer {
+    min-height: 380px;
+    background: linear-gradient(267.48deg, #ECECD5 56.22%, #D7D7B9 130.03%);
+    &__wrapper {
+        padding: 64px 0;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(168px, auto));
+        justify-content: space-between;
+    }
+    &__contacts {
+        &-items {
+            margin-top: 53px;
+        }
+        &-item {
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: 20px minmax(118px, auto);
+            column-gap: 12px;
+            align-items: center;
+            &-title {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #424242;
+            }
+        }
+    }
+    &__logo {
+        height: 50px;
+    }
+    &__links {
+        display: grid;
+        grid-template-rows: repeat(5, 20px);
+        row-gap: 38px;
+    }
+    &__link {
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #424242;
+            text-decoration: none;
+        }
+    }
+    &__info {
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            color: #424242;
+        }
+        &-sent {
+            margin-top: 31px;
+            position: relative;
+            max-width: 461px;
+            input {
+                width: 396px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 76px;
+                border: none;
+                outline: none;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7D7D7D;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 222px;
+                height: 50px;
+                background: $main-color;
+                border-radius: 49px;
+                border: none;
+                outline: none;
+                font-family: 'Spectral SC';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+        &-descr {
+            margin-top: 10px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 17px;
+            color: #525252;
+        }
+        &-license {
+            margin-top: 40px;
+            max-width: 410px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #525252;
+        }
+    }
+}    

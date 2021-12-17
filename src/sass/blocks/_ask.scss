@@ -1,0 +1,71 @@
+.ask {
+    margin-top: 128px;
+    position: relative;
+    &__wrapper {
+        padding-bottom: 64px;
+    }
+    &__form {
+        margin-top: 64px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(195px, auto));
+        grid-template-rows: 50px 34px;
+        gap: 10px 32px;
+    }
+    &__name {
+        width: 195px;
+        height: 50px;
+        border: 1px solid $second-color;
+        box-sizing: border-box;
+        border-radius: 46px;
+        background-color: #f5f5f5;
+        padding: 16px 32px;
+        outline: none;
+    }
+    &__phone {
+        width: 195px;
+        height: 50px;
+        border: 1px solid $second-color;
+        box-sizing: border-box;
+        border-radius: 46px;
+        background-color: #f5f5f5;
+        padding: 16px 32px;
+        outline: none;
+    }
+    &__btn {
+        width: 195px;
+        height: 50px;
+        background: $main-color;
+        border-radius: 49px;
+        border: none;
+        outline: none;
+        font-family: 'Spectral SC';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &__descr {
+        display: grid;
+        grid-column: 3;
+        max-width: 241px;
+        left: 1085px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: #525252;
+    }
+    &__backtitle {
+        top: -160px;
+        position: absolute;
+        font-family: 'Spectral SC';
+        font-weight: 300;
+        font-size: 245.936px;
+        line-height: 350px;
+        text-transform: uppercase;
+        color: rgba(94, 92, 90, 0.03);
+        z-index: -1;
+    }
+}
