@@ -85,6 +85,14 @@
                 text-transform: uppercase;
                 color: #FFFFFF;
                 cursor: pointer;
+                &:hover {
+                    background: linear-gradient(102.48deg, #7B4646 -29.03%, #BF9191 97.75%);
+                }
+                &:active {
+                    background: rgba(0, 0, 0, 0);;
+                    color: #976464;
+                    border: 1.79px solid #7B4646;
+                }
             }
         }
         &-descr {

@@ -152,13 +152,272 @@
                 </div>
 
                 <div class="content__sort">
-                    <div class="content__sort-item">
-                        <div class="content__sort-item-text">Цена</div>
-                        <img src="icons/arrows/sort_arrow_down.svg" alt="arrow">
+                    <button class="content__sort-item">
+                        Цена <img src="icons/arrows/sort_arrow_down.svg" alt="arrow">
+                    </button>
+                    <button class="content__sort-item">
+                        Цена <img src="icons/arrows/sort_arrow_down.svg" alt="arrow">
+                    </button>
+                </div>
+
+                <div class="content__main">
+                    <div class="content__filter">
+                        <div class="content__type">
+                            <div class="content__type-title">Тип изделий</div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="cords" name="cords" checked>
+                                <label for="cords">Шпагат, шнуры, веревки</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="rings" name="rings">
+                                <label for="rings">Кольца, бусины</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="jutes" name="jutes">
+                                <label for="jutes">Джут</label>
+                            </div>
+                        </div>
+                        <div class="content__divider"></div>
+                        <div class="content__type">
+                            <div class="content__type-title">Состав</div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="cotton" name="cotton">
+                                <label for="cotton">Хлопок</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="synthetics" name="synthetics">
+                                <label for="synthetics">Синтетика</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="core" name="core">
+                                <label for="core">С сердечником</label>
+                            </div>
+                        </div>
+                        <div class="content__divider"></div>
+                        <div class="content__type">
+                            <div class="content__type-title">Диаметр</div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="small" name="small">
+                                <label for="small">3 мм</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="middle" name="middle">
+                                <label for="middle">4 мм</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="postmiddle" name="postmiddle">
+                                <label for="postmiddle">4,5 мм</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="big" name="big">
+                                <label for="big">5 мм</label>
+                            </div>
+                        </div>
+                        <div class="content__divider"></div>
+                        <div class="content__type">
+                            <div class="content__type-title">Производитель</div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="Macrametr" name="Macrametr">
+                                <label for="Macrametr">Macrametr</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="marshmallow" name="marshmallow">
+                                <label for="marshmallow">Зефирка</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="gamma" name="gamma">
+                                <label for="gamma">Гамма</label>
+                            </div>
+                            <div class="content__type-input">
+                                <input type="checkbox" class="custom-checkbox" id="Sibcord" name="Sibcord">
+                                <label for="Sibcord">Сибшнур</label>
+                            </div>
+                        </div>
+    
+                        <button class="content__filter-btnshow">Показать</button>
+                        <button class="content__filter-btnclear">Очистить</button>
+                        <div class="content__filter-count">Подобрано 0 товаров</div>
                     </div>
-                    <div class="content__sort-item">
-                        <div class="content__sort-item-text">Цена</div>
-                        <img src="icons/arrows/sort_arrow_up.svg" alt="arrow">
+                    
+    
+                    <div class="content__cards">
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/twine.png" alt="twine">
+                                </div>
+                                <div class="content__card-title">Шпагат Macrametr <br> 4 мм, 100 нитей</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-696837"></span>
+                                    <span class="content__card-colors-81292F"></span>
+                                    <span class="content__card-colors-D8C1AA"></span>
+                                    <span class="content__card-colors-EED53A"></span>
+                                    <div class="content__card-colors-count">+5</div>
+                                </div>
+                                <div class="content__card-price">332 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/twine_2.png" alt="twine">
+                                </div>
+                                <div class="content__card-title">Шпагат джутовый <br> Сибшнур 500 м</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-B69882"></span>
+                                    <span class="content__card-colors-CFBBAC"></span>
+                                    <span class="content__card-colors-9D856B"></span>
+                                </div>
+                                <div class="content__card-price">422 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/yarn.png" alt="yarn">
+                                </div>
+                                <div class="content__card-title">Пряжа Arachna <br> "Macrame MAXI"</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-FAF9F6"></span>
+                                    <span class="content__card-colors-EBD5BC"></span>
+                                    <span class="content__card-colors-0395AF"></span>
+                                    <span class="content__card-colors-F09482"></span>
+                                    <div class="content__card-colors-count">+2</div>
+                                </div>
+                                <div class="content__card-price">1092 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/yarn_2.png" alt="yarn">
+                                </div>
+                                <div class="content__card-title">Пряжа Arachna <br> "Macrame MINI"</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-FAF9F6"></span>
+                                    <span class="content__card-colors-EBD5BC"></span>
+                                    <span class="content__card-colors-0395AF"></span>
+                                    <span class="content__card-colors-F09482"></span>
+                                    <div class="content__card-colors-count">+2</div>
+                                </div>
+                                <div class="content__card-price">1053 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/cord.png" alt="cord">
+                                </div>
+                                <div class="content__card-title">Шнур "Gamma" 0.8 мм, 50 м</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-E5D8CB"></span>
+                                    <span class="content__card-colors-C51212"></span>
+                                    <span class="content__card-colors-FC9257"></span>
+                                    <span class="content__card-colors-1C1C1C"></span>
+                                    <div class="content__card-colors-count">+4</div>
+                                </div>
+                                <div class="content__card-price">852 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="content__card">
+                            <div class="content__card-wrapper">
+                                <div class="content__card-btns">
+                                    <button class="content__card-btns-like">
+                                        <img src="icons/like.svg" alt="like">
+                                    </button>
+                                    <button class="content__card-btns-more">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="content__card-img">
+                                    <img src="img/cards/marshmallow.png" alt="marshmallow">
+                                </div>
+                                <div class="content__card-title">Веревка “Zефирка” <br> 4 мм, 100 м</div>
+                                <div class="content__card-colors">
+                                    <span class="content__card-colors-FCF7F4"></span>
+                                    <span class="content__card-colors-FAF0E2"></span>
+                                    <span class="content__card-colors-F24135"></span>
+                                    <span class="content__card-colors-0395AF"></span>
+                                    <div class="content__card-colors-count">+1</div>
+                                </div>
+                                <div class="content__card-price">617 ₽</div>
+                                <button class="content__card-tobin">
+                                    <img src="icons/nav/bag.svg" alt="bin"> В корзину
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
