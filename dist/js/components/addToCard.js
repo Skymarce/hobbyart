@@ -1,4 +1,7 @@
-function addToCard() {
+
+    let amountBin = document.querySelector('.navigation__amount-bin');
+    
+    function addToCard() {
     let toBin = document.querySelectorAll('.content__card-tobin');
     let array = [];
 
@@ -17,8 +20,16 @@ function addToCard() {
             }
             array.push(toBinObj);
             localStorage.setItem('BinCards', JSON.stringify(array));
+            let amount = JSON.parse(localStorage.getItem('BinCards'));
+            showAmount();
+            amountBin.textContent = `${amount.length}`;
         })
     })
+}
+
+function showAmount() {
+    amountBin.classList.add('show');
+    amountBin.classList.remove('hide');
 }
 
 export {addToCard};

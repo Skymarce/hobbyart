@@ -122,8 +122,8 @@
         }
     }
     &__bin {
+        position: relative;
         button {
-            position: relative;
             width: 114px;
             height: 38px;
             background-color: white;
@@ -144,7 +144,23 @@
             img {
                 margin-right: 6px;
             }
-            @include after_circle-2
         }
+    }
+    &__amount-bin {
+        position: absolute;
+        z-index: 5;
+        top: -20%;
+        left: 92px;
+        width: 17px;
+        height: 17px;
+        background: #D3D3B5;;
+        border-radius: 100%;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #5E5C5A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

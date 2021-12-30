@@ -14,6 +14,14 @@ body {
     margin: 0 auto;
 }
 
+.show {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
 @import 'base/mixins';
 @import 'base/variables';
 @import 'blocks/header';

@@ -1,5 +1,5 @@
 import {getData} from "../services/getData.js";
-import { addToCard } from "./addToCard.js";
+import {addToCard} from "./addToCard.js";
 import {config} from '../environments/environments.js';
 
 function showCard() {
