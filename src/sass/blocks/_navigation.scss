@@ -52,7 +52,7 @@
                 color: $second-color;
                 border: none;
                 outline: none;
-                background-color: #f5f5f5;
+                background-color: #fff;
             }
             img {
                 margin-right: 18px;
@@ -73,7 +73,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f5f5f5;
+        background-color: #fff;
         cursor: pointer;
         &:hover {
             border: 1px solid #976464; 
@@ -105,7 +105,7 @@
             box-sizing: border-box;
             border-radius: 46px;
             color: $second-color;
-            background-color: #f5f5f5;
+            background-color: #fff;
             cursor: pointer;
             &:hover {
                 border: 1px solid #976464; 
@@ -123,27 +123,34 @@
     }
     &__bin {
         position: relative;
-        button {
-            width: 114px;
-            height: 38px;
-            background-color: white;
-            border: 1px solid $second-color;
-            box-sizing: border-box;
-            border-radius: 46px;
-            color: $second-color;
-            cursor: pointer;
-            background-color: #f5f5f5;
-            &:hover {
-                border: 1px solid #976464; 
-                color: #976464;
-            }
-            &:active {
-                background: $main-color;
-                color: #fff;
-            }
-            img {
-                margin-right: 6px;
-            }
+        width: 114px;
+        height: 38px;
+        background-color: white;
+        border: 1px solid $second-color;
+        box-sizing: border-box;
+        border-radius: 46px;
+        font-weight: normal;
+        font-size: 14px;
+        color: $second-color;
+        cursor: pointer;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            border: 1px solid #976464; 
+            color: #976464;
+        }
+        &:active {
+            background: $main-color;
+            color: #fff;
+        }
+        img {
+            margin-right: 6px;
+        }
+        a {
+            text-decoration: none;
+            color: #dbdbdb;
         }
     }
     &__amount-bin {
