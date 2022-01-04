@@ -40,10 +40,11 @@
             align-items: center;
             padding-right: 27px;
             &-title {
-                max-width: 340px;
+                width: 340px;
                 font-weight: 600;
                 font-size: 18px;
                 color: #424242;
+                text-align: left;
             }
             &-price {
                 font-weight: 600;
@@ -90,6 +91,11 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: #BDBDBD;
+            }
+            &-img {
+                img {
+                    max-width: 174px;
+                }
             }
         }
         &-order {
@@ -151,7 +157,7 @@
             }
             &-all {
                 
-                max-width: 172px;
+                max-width: 176px;
                 &-title {
                     font-weight: normal;
                     font-size: 16px;
@@ -201,9 +207,5 @@
 }
 
 .navigation__user-input input {
-    background-color: #fff;
-}
-
-body {
     background-color: #fff;
 }

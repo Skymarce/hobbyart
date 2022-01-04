@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    position: relative;
+    background-color: #fff;
 }
 
 .container {
@@ -36,3 +37,4 @@ body {
 @import 'blocks/content';
 @import 'blocks/addproduct';
 @import 'blocks/content-trash';
+@import 'blocks/logIn';

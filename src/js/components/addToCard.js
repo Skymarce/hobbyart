@@ -1,7 +1,7 @@
+let amountBin = document.querySelector('.navigation__amount-bin');
+let idCount = 0;
 
-    let amountBin = document.querySelector('.navigation__amount-bin');
-    
-    function addToCard() {
+function addToCard() {
     let toBin = document.querySelectorAll('.content__card-tobin');
     let array = [];
 
@@ -13,6 +13,7 @@
             let price = item.parentElement.querySelector('.content__card-price').textContent;
 
             let toBinObj = {
+                id: `${idCount++}`,
                 title: `${title}`,
                 img: `${img}`,
                 color: `${color}`,
