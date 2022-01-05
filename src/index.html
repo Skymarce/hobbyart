@@ -470,20 +470,20 @@
         </div>
     </footer>
 
-    <div class="logIn">
+    <div class="logIn hide">
+        <button class="logIn__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
         <div class="logIn__wrapper">
-            <button class="logIn__close">
-                <img src="icons/close.svg" alt="close">
-            </button>
             <div class="logIn__title">Войти в личный кабинет</div>
             <input class="logIn__number" placeholder="Номер телефона" type="number">
             <div class="logIn__password">
                 <input class="password" placeholder="Пароль" type="text">
-                <img src="icons/eye.svg" alt="eye">
+                <img class="logIn__visibility" src="icons/eye.svg" alt="eye">
                 <img class="hide" src="icons/noeye.svg" alt="noeye">
             </div>
-            <div class="logIn__type-input">
-                <input type="checkbox" class="custom-checkbox" id="memory" name="memory">
+            <div class="logIn__memory">
+                <input type="checkbox" class="input__memory" id="memory" name="memory" checked>
                 <label for="memory">Запомнить меня</label>
             </div>
             <div class="logIn__log">
@@ -493,6 +493,45 @@
             <div class="logIn__divider"></div>
             <div class="logIn__subtitle">Вы еще не зарегистрированы?</div>
             <button class="logIn__registration">Регистрация</button>
+        </div>
+    </div>
+
+    <div class="recovery hide">
+        <button class="recovery__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
+        <div class="recovery__wrapper">
+            <div class="recovery__title">Забыли пароль?</div>
+            <input class="recovery__mail" placeholder="Введите ваш E-mail" type="e-mail" name="recovery-mail">
+            <label class="recovery__descr" for="recovery-mail">На E-mail придет письмо со ссылкой на смену пароля</label>
+            <button class="recovery__btn">Отправить</button>
+        </div>
+    </div>
+
+    <div class="registration">
+        <button class="registration__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
+        <div class="registration__wrapper">
+            <div class="registration__title">Регистрация</div>
+            <input class="registration__name" placeholder="Имя" type="text">
+            <input class="registration__surname" placeholder="Фамилия" type="text">
+            <input class="registration__patronymic" placeholder="Отчество" type="text">
+            <input class="registration__number" placeholder="Номер телефона" type="number">
+            <input class="registration__mail" placeholder="e-mail" type="e-mail">
+            <div class="registration__password">
+                <input class="pass" placeholder="Придумайте пароль" type="text">
+                <img class="registration__visibility" src="icons/eye.svg" alt="eye">
+                <input class="pass" placeholder="Придумайте пароль" type="text" name="password">
+                <img class="registration__visibility" src="icons/eye.svg" alt="eye">
+                <label class="registration__descr" for="password">Пароль должен содержать от 6 символов</label>
+            </div>
+            <button class="registration__btn">Зарегистрироваться</button>
+            <div class="registration__divider"></div>
+            <div class="registration__log">
+                <button class="registration__forget">Есть аккаунт?</button>
+                <button class="registration__btn">Войти</button>
+            </div>
         </div>
     </div>
 
