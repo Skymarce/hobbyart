@@ -27,7 +27,7 @@
         color: #424242;
         text-align: center;
     }
-    &__number {
+    &__mail {
         display: block;
         margin: 0 auto;
         margin-top: 40px;
@@ -88,18 +88,17 @@
         column-gap: 24px;
     }
     &__btn {
-        padding: 13px 45px;
         width: 152px;
         height: 50px;
         background: $main-color;
         border-radius: 49px;
+        outline: none;
+        border: none;
         font-family: 'Spectral SC';
         font-weight: 600;
         font-size: 16px;
         text-transform: uppercase;
         color: #FFFFFF;
-        outline: none;
-        border: none;
         cursor: pointer;
         &:hover {
             background: linear-gradient(102.48deg, #7B4646 -29.03%, #BF9191 97.75%);

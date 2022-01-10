@@ -214,8 +214,27 @@
         </div>
     </section>
 
+    <div class="order hide">
+        <button class="order__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
+        <div class="order__wrapper">
+            <div class="order__price"></div>
+            <div class="order__discount"></div>
+            <div class="order__bonus"></div>
+            <div class="order__products">Перечень ваших товаров:
+                <div class="order__products-list"></div>
+            </div>
+            <input class="order__name" type="text" placeholder="Имя">
+            <input class="order__phone" type="number" placeholder="Номер телефона">
+            <button class="order__sent">Отправить</button>
+        </div>
+        
+    </div>
+
     <script src="js/components/productsFromCart.js" type="module"></script>
     <script src="js/components/getDiscount.js" type="module"></script>
-    <script src="js/components/deleteCard.js" type="module"></script>
+    <script src="js/components/deleteFromCart.js" type="module"></script>
+    <script src="js/components/orderingFromCart.js" type="module"></script>
 </body>
 </html>

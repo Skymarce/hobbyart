@@ -83,7 +83,7 @@
                         <img src="icons/nav/search.svg" alt="search">
                     </div>
                     <div class="navigation__login">
-                        <a href="admin.html" class="login">
+                        <a href="auth.html" class="login">
                             <img src="icons/nav/login.svg" alt="login">Войти
                         </a>    
                     </div>
@@ -508,7 +508,7 @@
         </div>
     </div>
 
-    <div class="registration">
+    <div class="registration hide">
         <button class="registration__close">
             <img src="icons/close.svg" alt="close">
         </button>
@@ -518,11 +518,13 @@
             <input class="registration__surname" placeholder="Фамилия" type="text">
             <input class="registration__patronymic" placeholder="Отчество" type="text">
             <input class="registration__number" placeholder="Номер телефона" type="number">
-            <input class="registration__mail" placeholder="e-mail" type="e-mail">
+            <input class="registration__mail" placeholder="E-mail" type="e-mail">
             <div class="registration__password">
                 <input class="pass" placeholder="Придумайте пароль" type="text">
                 <img class="registration__visibility" src="icons/eye.svg" alt="eye">
-                <input class="pass" placeholder="Придумайте пароль" type="text" name="password">
+            </div>
+            <div class="registration__password">
+                <input class="pass" placeholder="Придумайте пароль" type="text">
                 <img class="registration__visibility" src="icons/eye.svg" alt="eye">
                 <label class="registration__descr" for="password">Пароль должен содержать от 6 символов</label>
             </div>
@@ -530,7 +532,7 @@
             <div class="registration__divider"></div>
             <div class="registration__log">
                 <button class="registration__forget">Есть аккаунт?</button>
-                <button class="registration__btn">Войти</button>
+                <button class="registration__logbtn">Войти</button>
             </div>
         </div>
     </div>
