@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Добавление товара</title>
+    <title>Личный кабинет</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -100,26 +100,85 @@
             </div>
         </div>
     </nav>
-    
-    <div class="card__form">
+
+    <section class="promo">
         <div class="container">
-            <div class="card__form-wrapper">
-                <div class="card__form-email"></div>
-                <button class="card__form-out">Выйти</button>
-                <input class="card__form-title" placeholder="Название"/>
-                <input class="card__form-price" placeholder="Цена"/>
-                <input class="card__form-img" placeholder="Ссылка на изображение" type="text">
-                <input class="card__form-color" placeholder="Цвет, 000000"/>
-                <button class="card__form-addcolor">Добавить цвет</button>
-                <textarea class="card__form-descr" name="description" placeholder="Описание товара"></textarea>
-                <button class="card__form-create">Создать</button>
+            <div class="promo__wrapper">
+                <img class="promo__hot" src="icons/promo/hot_seil.svg" alt="seil">
+                <div class="promo__main">
+                    <div class="promo__title">
+                        Пряжа Macrametr
+                    </div>
+                    <div class="promo__subtitle">
+                        Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия. 
+                    </div>
+                    <a href="catalog_macrame.html">
+                        <button class="promo__btn">В каталог</button>
+                    </a>
+                </div>
+                <div class="promo__moving">
+                    <div class="promo__prev">
+                        <img src="icons/promo/arrow_prev.svg" alt="next">
+                    </div>
+                    <div class="promo__count">
+                        1\5
+                    </div>
+                    <div class="promo__next">
+                        <img src="icons/promo/arrow_next.svg" alt="next">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script src="js/components/createCard.js" type="module"></script>
-    <script src="js/components/addColor.js" type="module"></script>
-    <script src="js/components/logOut.js" type="module"></script>
-    <script src="js/components/checkingAuth.js" type="module"></script>
+    <section class="content">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__road">
+                    <div class="content__road-item">
+                        <a href="#">
+                            Главная 
+                        </a>
+                        <img src="icons/arrows/road_arrow.svg" alt="arrow">
+                    </div>
+                    <div class="content__road-item">
+                        <a href="#">
+                            Корзина
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content__title">личный кабинет</div>
+                <div class="content__accaunt">
+                    <div class="content__accaunt-wrapper">
+                        <div class="content__accaunt-menu">
+                            <div class="content__accaunt-profile">
+                                <img src="img/accaunt_photo.png" alt="phoro of accaunt">
+                                <div class="content__accaunt-name">Ольга Иванова</div>
+                                <button class="content__accaunt-change">+</button>
+                            </div>
+                            <div class="content__accaunt-items">
+                                <button class="content__accaunt-details">Мои данные</button>
+                                <button class="content__accaunt-bonuses">Бонусный счет</button>
+                                <button class="content__accaunt-favorites">Избранные товары</button>
+                                <button class="content__accaunt-orders">История заказов</button>
+                                <button class="content__accaunt-mailing">Рассылка</button>
+                                <button class="content__accaunt-reviews">Отзывы</button>
+                            </div>
+                            <div class="content__accaunt-out">
+                                <button class="content__accaunt-out-btn">
+                                    <img src="icons/log_out.svg" alt="log_out from accaunt">Выйти из личного кабинета
+                                </button>
+                            </div>
+                            <div class="content__accaunt-divider"></div>
+                        </div>
+                        <div class="content__accaunt-occupancy">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

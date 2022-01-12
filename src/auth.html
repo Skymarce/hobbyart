@@ -8,10 +8,68 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__wrapper">
+                <div class="navigation__menu">
+                    <ul class="navigation__menu-items">
+                        <li class="navigation__menu-item">
+                            <a href="catalog_macrame.html">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Бонусная программа
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navigation__logo">
+                    <a href="/index.html">
+                        <img src="icons/nav/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="navigation__user">
+                    <div class="navigation__user-input">
+                        <input class="searching" placeholder="Поиск товара" type="text">
+                        <img src="icons/nav/search.svg" alt="search">
+                    </div>
+                    <div class="navigation__login">
+                        <a href="auth.html" class="login">
+                            <img src="icons/nav/login.svg" alt="login">Войти
+                        </a>    
+                    </div>
+                    <div class="navigation__select">
+                        <button class="select"><img src="icons/nav/heart.svg" alt="select">Избранное</button>
+                    </div>
+                    <div class="navigation__bin">
+                        <a href="trash.html" class="bin">
+                            <img src="icons/nav/bag.svg" alt="bin">Корзина
+                        </a>
+                        <div class="navigation__amount-bin hide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="logIn">
-        <button class="logIn__close">
-            <img src="icons/close.svg" alt="close">
-        </button>
         <div class="logIn__wrapper">
             <div class="logIn__title">Войти в личный кабинет</div>
             <input class="logIn__mail" placeholder="Адрес электронной почты" type="e-mail">

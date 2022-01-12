@@ -1,9 +1,11 @@
 import {getData} from "../services/getData.js";
 import {addToCard} from "./addToCard.js";
+import {addToFavorites} from "./addToFavorites.js";
+
 import {config} from '../environments/environments.js';
 
 function showCard() {
-    getData(`${config.fbUrl}catalog.json`).then(catalog => {representCards(catalog), addToCard()});
+    getData(`${config.fbUrl}catalog.json`).then(catalog => {representCards(catalog), addToCard(), addToFavorites()});
 }
 
 showCard();
@@ -15,7 +17,7 @@ function representCards(catalog) {
             <div class="content__card">
                 <div class="content__card-wrapper">
                     <div class="content__card-btns">
-                        <button class="content__card-btns-like">
+                        <button class="content__card-btns-like" type="button">
                             <img src="icons/like.svg" alt="like">
                         </button>
                         <button class="content__card-btns-more">

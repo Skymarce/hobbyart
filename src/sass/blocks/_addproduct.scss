@@ -1,5 +1,11 @@
 .card__form {
+    &-email {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
     &-wrapper {
+        position: relative;
         margin-top: 50px;
         display: grid;
         justify-content: center;
@@ -59,5 +65,15 @@
                 border: 1.79px solid #7B4646;
             }
         }
+    }
+    &-out {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px !important;
+        background: #fff !important;
+        font-size: 12px !important;
+        color: #7B4646 !important;
+        border: 1.79px solid #7B4646 !important;
     }
 }
