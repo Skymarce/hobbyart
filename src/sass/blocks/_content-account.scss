@@ -1,0 +1,114 @@
+.content {
+    &__title {
+        margin-top: 64px;
+        font-family: 'Spectral SC';
+        font-weight: 600;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #424242;
+    }
+    &__account {
+        margin-top: 48px;
+        min-height: 1163px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+        border-radius: 20px;
+        &-wrapper {
+            padding: 56px 64px 60px 64px;
+            display: grid;
+            grid-template-columns: 381px 1052px;
+            column-gap: 60px;
+        }
+        &-menu {
+            position: relative;
+            &-divider {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0px;
+                height: 645px;
+                border: 1px solid #BDBDBD;
+            }
+        }
+        &-profile {
+            position: relative;
+            width: 317px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-name {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 24px;
+            font-weight: 600;
+            font-size: 24px;
+            color: #424242;
+        }
+        &-change {
+            position: absolute;
+            top: 83px;
+            left: 72px;
+            width: 17px;
+            height: 17px;
+            border: none;
+            border-radius: 50%;
+            background: #D3D3B5;
+            color: #424242;
+            cursor: pointer;
+        }
+        &-items {
+            margin-top: 57px;
+            button {
+                margin-top: 40px;
+                font-weight: 600;
+                font-size: 18px;
+                background-color: #FFFFFF;
+                color: #BDBDBD;
+                border: none;
+                cursor: pointer;
+                &-active {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 21px;
+                    padding-left: 32px;
+                    width: 312px;
+                    height: 56px;
+                    background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%);
+                    border-radius: 20px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &-out {
+            display: flex;
+            align-items: center;
+            margin-top: 533px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #BDBDBD;
+            background-color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            img {
+                margin-right: 8px;
+            }
+        }
+        &-occupancy {
+            &-title {
+                margin-top: 38px;
+                font-weight: 600;
+                font-size: 24px;
+                color: #424242;
+            }
+            &-cards {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 245px);
+                gap: 24px;
+            }
+        }
+    }
+}
