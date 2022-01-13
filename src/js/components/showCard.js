@@ -18,7 +18,7 @@ function representCards(catalog) {
                 <div class="content__card-wrapper">
                     <div class="content__card-btns">
                         <button class="content__card-btns-like" type="button">
-                            <img src="icons/like.svg" alt="like">
+                            <img class="content__card-btn-like" src="icons/like.svg" alt="like">
                         </button>
                         <button class="content__card-btns-more">
                             <span></span>
