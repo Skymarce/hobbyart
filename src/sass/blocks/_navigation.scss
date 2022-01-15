@@ -60,7 +60,7 @@
             }
         }
     }
-    &__login {
+    &__login, &__logout {
         width: 101px;
         height: 38px;
         border: 1px solid $second-color;
@@ -89,6 +89,7 @@
         }
         img {
             margin-right: 6px;
+            width: 12px;
         }
         a {
             text-decoration: none;
@@ -96,32 +97,40 @@
         }
     }
     &__select {
-        button {
-            position: relative;
-            width: 135px;
-            height: 38px;
-            background-color: white;
-            border: 1px solid $second-color;
-            box-sizing: border-box;
-            border-radius: 46px;
-            color: $second-color;
-            background-color: #fff;
-            cursor: pointer;
-            &:hover {
-                border: 1px solid #976464; 
+        position: relative;
+        width: 135px;
+        height: 38px;
+        background-color: white;
+        border: 1px solid $second-color;
+        box-sizing: border-box;
+        border-radius: 46px;
+        font-weight: normal;
+        font-size: 14px;
+        color: $second-color;
+        cursor: pointer;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            border: 1px solid #976464; 
+            color: #976464;
+            a {
                 color: #976464;
             }
-            &:active {
-                background: $main-color;
-                color: #fff;
-            }
-            img {
-                margin-right: 6px;
-            }
-            @include after_circle
+        }
+        &:active {
+            background: $main-color;
+        }
+        img {
+            margin-right: 6px;
+        }
+        a {
+            text-decoration: none;
+            color: #dbdbdb;
         }
     }
-    &__bin {
+    &__bin, &__orders {
         position: relative;
         width: 114px;
         height: 38px;
@@ -139,7 +148,9 @@
         align-items: center;
         &:hover {
             border: 1px solid #976464; 
-            color: #976464;
+            a {
+                color: #976464;
+            }
         }
         &:active {
             background: $main-color;
@@ -153,7 +164,7 @@
             color: #dbdbdb;
         }
     }
-    &__amount-bin {
+    &__amount-bin, &__amount-select {
         position: absolute;
         z-index: 5;
         top: -20%;
@@ -169,5 +180,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__amount-select {
+        left: 114px;
     }
 }

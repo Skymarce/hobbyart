@@ -1,6 +1,6 @@
 @mixin after_circle {
     &::after {
-        content: '2';
+        content: '';
         position: absolute;
         z-index: 5;
         top: -20%;
@@ -21,7 +21,7 @@
 
 @mixin after_circle-2 {
     &::after {
-        content: '1';
+        content: '';
         position: absolute;
         z-index: 5;
         top: -20%;

@@ -68,18 +68,6 @@
                 color: #BDBDBD;
                 border: none;
                 cursor: pointer;
-                &-active {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    margin-top: 21px;
-                    padding-left: 32px;
-                    width: 312px;
-                    height: 56px;
-                    background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%);
-                    border-radius: 20px;
-                    color: #FFFFFF;
-                }
             }
         }
         &-out {
@@ -111,4 +99,17 @@
             }
         }
     }
+}
+
+.active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 21px !important;
+    padding-left: 32px;
+    width: 312px;
+    height: 56px;
+    background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%);
+    border-radius: 20px;
+    color: #FFFFFF !important;
 }

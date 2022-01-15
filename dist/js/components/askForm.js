@@ -1,4 +1,4 @@
-import { postData } from "../services/postData.js";
+import {postData} from "../services/postData.js";
 import {config} from "../environments/environments.js";
 
 let askName = document.querySelector('.ask__name'),

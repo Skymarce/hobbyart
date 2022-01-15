@@ -88,7 +88,8 @@
                         </a>    
                     </div>
                     <div class="navigation__select">
-                        <button class="select"><img src="icons/nav/heart.svg" alt="select">Избранное</button>
+                        <a href="account.html" class="select"><img src="icons/nav/heart.svg" alt="select">Избранное</a>
+                        <div class="navigation__amount-select hide"></div>
                     </div>
                     <div class="navigation__bin">
                         <a href="trash.html" class="bin">
@@ -143,7 +144,7 @@
                     </div>
                     <div class="content__road-item">
                         <a href="#">
-                            Корзина
+                            Личный кабинет
                         </a>
                     </div>
                 </div>
@@ -172,42 +173,16 @@
                         </div>
                         <div class="content__account-occupancy">
                             <div class="content__account-occupancy-title">Избранные товары</div>
-                            <div class="content__account-occupancy-cards">
-                                <div class="content__card">
-                                    <div class="content__card-wrapper">
-                                        <div class="content__card-btns">
-                                            <button class="content__card-btns-like">
-                                                <img src="icons/like_active.svg" alt="like">
-                                            </button>
-                                            <button class="content__card-btns-more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
-                                        </div>
-                                        <div class="content__card-img">
-                                            <img src="img/cards/twine.png" alt="twine">
-                                        </div>
-                                        <div class="content__card-title">Шпагат Macrametr <br> 4 мм, 100 нитей</div>
-                                        <div class="content__card-colors">
-                                            <span class="content__card-colors-696837"></span>
-                                            <span class="content__card-colors-81292F"></span>
-                                            <span class="content__card-colors-D8C1AA"></span>
-                                            <span class="content__card-colors-EED53A"></span>
-                                            <div class="content__card-colors-count">+5</div>
-                                        </div>
-                                        <div class="content__card-price">332 ₽</div>
-                                        <button class="content__card-tobin">
-                                            <img src="icons/nav/bag.svg" alt="bin"> В корзину
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="content__account-occupancy-cards"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="js/components/showFavoritesCards.js" type="module"></script>
+    <script src="js/components/deleteFromFavorites.js" type="module"></script>
+    <script src="js/components/addToCard.js" type="module"></script>
 </body>
 </html>

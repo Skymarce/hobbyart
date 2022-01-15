@@ -1,4 +1,4 @@
-document.querySelector('.card__form-out').addEventListener('click', () => {
+document.querySelector('.navigation__logout').addEventListener('click', () => {
     localStorage.removeItem('Admin');
     window.location = 'auth.html';
 });

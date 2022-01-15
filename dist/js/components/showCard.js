@@ -7,7 +7,6 @@ import {config} from '../environments/environments.js';
 function showCard() {
     getData(`${config.fbUrl}catalog.json`).then(catalog => {representCards(catalog), addToCard(), addToFavorites()});
 }
-
 showCard();
 
 function representCards(catalog) {

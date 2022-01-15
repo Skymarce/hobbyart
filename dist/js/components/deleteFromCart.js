@@ -1,5 +1,3 @@
-import {productsFromCart} from './productsFromCart.js';
-
 let productFromCart = JSON.parse(localStorage.getItem('BinCards'));
 let deleteBtn = document.querySelectorAll('.content__trash-item-icon');
 

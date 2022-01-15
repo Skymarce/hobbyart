@@ -1,6 +1,5 @@
 import {auth} from '../services/authFb.js';
 import {config} from '../environments/environments.js';
-import {closeModal} from './modal.js';
 
 let inputMail = document.querySelector('.logIn__mail');
 let inputPassword = document.querySelector('.password');
@@ -10,12 +9,15 @@ let error = document.createElement('div');
 error.classList.add('login-error');
 error.textContent = 'Вы ввели некорректные данные';
 
+if (localStorage.getItem('rememberData')) {
+    autoFill()
+} 
+
 function autoFill() {
     let userData = JSON.parse(localStorage.getItem('rememberData'));
     inputMail.value = userData.email;
     inputPassword.value = userData.password;
 }
-autoFill();
 
 document.querySelector('.logIn__btn').addEventListener('click', () => {
     
@@ -56,11 +58,6 @@ document.querySelector('.logIn__btn').addEventListener('click', () => {
                 password: inputPassword.value
             }
             localStorage.setItem('rememberData', JSON.stringify(remeberObj));
-        }
+        } 
     }
 });
-
-document.querySelector('.logIn__close').addEventListener('click', () => {
-    closeModal('.logIn');
-});
-

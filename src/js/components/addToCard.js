@@ -1,9 +1,11 @@
+import {openModal} from './modal.js';
+
 let amountBin = document.querySelector('.navigation__amount-bin');
 let idCount = 0;
 
 function addToCard() {
     let toBin = document.querySelectorAll('.content__card-tobin');
-    let array = [];
+    let cardsBin = [];
 
     toBin.forEach(item => {
         item.addEventListener('click', () => {
@@ -19,18 +21,20 @@ function addToCard() {
                 color: `${color}`,
                 price: `${price}`
             }
-            array.push(toBinObj);
-            localStorage.setItem('BinCards', JSON.stringify(array));
-            let amount = JSON.parse(localStorage.getItem('BinCards'));
-            showAmount();
-            amountBin.textContent = `${amount.length}`;
+            if (localStorage.getItem('BinCards')) {
+                cardsBin = JSON.parse(localStorage.getItem('BinCards'));
+            }
+            cardsBin.push(toBinObj);
+            localStorage.setItem('BinCards', JSON.stringify(cardsBin));
+            showAmountBin();
         })
     })
-}
+} 
 
-function showAmount() {
-    amountBin.classList.add('show');
-    amountBin.classList.remove('hide');
+function showAmountBin() {
+    openModal('.navigation__amount-bin');
+    amountBin.textContent = JSON.parse(localStorage.getItem('BinCards'))?.length;
 }
+showAmountBin();
 
-export {addToCard};
+export {addToCard, showAmountBin};

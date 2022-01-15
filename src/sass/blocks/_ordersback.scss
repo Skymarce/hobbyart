@@ -1,0 +1,45 @@
+.orders {
+    .table-dark {
+        --bs-table-striped-bg: #976464;
+        --bs-table-bg: #fff;
+        color: #000;
+        border-color: #976464;
+        td {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    &__done, &__return {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        color: #fff;
+        background-color: #976464;
+        border-color: #976464;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        &:hover {
+            color: #976464;
+            background-color: #fff;
+        }
+        &:active {
+            color: #fff;
+            background-color: #976464;
+            border-color: #976464;
+        }
+    }
+    &__return {
+        display: block;
+        margin: 0 auto;
+        background-color: #a0a0a0;
+        border-color: #a0a0a0;
+    }
+}
