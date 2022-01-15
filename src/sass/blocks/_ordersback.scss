@@ -1,6 +1,12 @@
 .orders {
+    tr {
+        --bs-table-striped-bg: #fff;
+        --bs-table-bg: #fff;
+        --bs-table-striped-color: #000;
+    }
     .table-dark {
         --bs-table-striped-bg: #976464;
+        --bs-table-striped-color: #fff;
         --bs-table-bg: #fff;
         color: #000;
         border-color: #976464;

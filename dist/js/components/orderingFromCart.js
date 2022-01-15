@@ -36,11 +36,11 @@ function orderingFromCart() {
         console.log(sendObj.price)
         postData('https://hobbyart-2cead-default-rtdb.firebaseio.com/order.json', sendObj);
         cleanModal(inputName, inputTel);
+        closeModal('.order')
     })
 
     document.querySelector('.order__close').addEventListener('click', () => {
         closeModal('.order');
-        productBox.innerHTML = '';
     })
 }
 
