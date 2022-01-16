@@ -32,8 +32,8 @@ function addToCard() {
 } 
 
 function showAmountBin() {
-    openModal('.navigation__amount-bin');
     amountBin.textContent = JSON.parse(localStorage.getItem('BinCards'))?.length;
+    openModal('.navigation__amount-bin');
 }
 showAmountBin();
 

@@ -50,8 +50,8 @@ function addToFavorites() {
 
 
 function showAmountFavorites() {
-    openModal('.navigation__amount-select');
     amountFavorites.textContent = JSON.parse(localStorage.getItem('Favorites'))?.length;
+    openModal('.navigation__amount-select');
 }
 showAmountFavorites();
 
