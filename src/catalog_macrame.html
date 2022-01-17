@@ -80,7 +80,7 @@
                 <div class="navigation__user">
                     <div class="navigation__user-input">
                         <input class="searching" placeholder="Поиск товара" type="text">
-                        <img src="icons/nav/search.svg" alt="search">
+                        <img class="navigation___user-search" src="icons/nav/search.svg" alt="search">
                     </div>
                     <div class="navigation__login">
                         <a href="auth.html" class="login">
@@ -428,7 +428,17 @@
         </div>
     </section>
 
+    <div class="result hide">
+        <button class="result__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
+        <div class="result__wrapper">
+
+        </div>
+    </div>
+
     <script src="js/components/showCard.js" type="module"></script>
     <script src="js/components/addToFavorites.js" type="module"></script>
+    <script src="js/components/searchingCards.js" type="module"></script>
 </body>
 </html>
