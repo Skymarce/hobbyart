@@ -2,7 +2,7 @@ import {getData} from '../services/getData.js';
 import {config} from '../environments/environments.js';
 import {closeModal, openModal} from './modal.js';
 import {addToFavorites} from './addToFavorites.js';
-import {addToCard} from './addToCard.js';
+import {addToCart} from './addToCart.js';
 
 getData(`${config.fbUrl}catalog.json`).then(catalog => searchingCards(Object.entries(catalog)));
 
@@ -13,7 +13,7 @@ function searchingCards(catalog) {
         let filteredCatalog = catalog.filter(item => item[1].title.toLowerCase().includes(searchInput.value.toLowerCase()));
 
         if (filteredCatalog.length === 0) {
-            alert('Товаров по вашему не запросу не найдено')
+            alert('Товаров по вашему не запросу не найдено');
         } else {
             filteredCatalog.forEach(item => {
                 document.querySelector('.result__wrapper').innerHTML += `
@@ -45,14 +45,14 @@ function searchingCards(catalog) {
                 `;
             });
             openModal('.result');
-            addToCard();
+            addToCart();
             addToFavorites();
-        }
-        
+        };
     });
     
     document.querySelector('.result__close').addEventListener('click', () => {
         closeModal('.result');
         document.querySelector('.result__wrapper').innerHTML = '';
-    })
-}
+        searchInput.value = '';
+    });
+};

@@ -9,4 +9,4 @@ function showAmountOrders(orders) {
 
     openModal('.navigation__amount-orders');
     amountOrders.textContent = Object.keys(orders)?.length;
-}
+};

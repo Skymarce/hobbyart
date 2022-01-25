@@ -1,8 +1,7 @@
 let discount = 20;
 
 function getDiscount() {
-    
-    let quantity = JSON.parse(localStorage.getItem('BinCards')).length;
+    let quantity = JSON.parse(localStorage.getItem('CartCards')).length;
     let totalDiscount = document.querySelector('#discount');
 
     switch(quantity) {
@@ -18,13 +17,10 @@ function getDiscount() {
         case 5: discount *= 5; 
         break;
         default: discount *= 10;
-    }
+    };
     
     totalDiscount.textContent = `${discount} ₽`;
-}
-
+};
 getDiscount();
-
-
 
 export {discount};

@@ -82,4 +82,10 @@
         color: rgba(94, 92, 90, 0.03);
         z-index: -1;
     }
+    &__error {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 16px;
+        color: #976464;
+    }
 }

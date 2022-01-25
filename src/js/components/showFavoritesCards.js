@@ -1,3 +1,5 @@
+import {addToCart} from './addToCart.js';
+
 let button = document.querySelector('.content__account-favorites')
 
 function showFavoritesCards() {
@@ -18,7 +20,7 @@ function showFavoritesCards() {
                         </button>
                     </div>
                     <div class="content__card-img">
-                        <img src="${item.img}" alt="twine">
+                        <img class="content__card-img-img" src="${item.img}" alt="twine">
                     </div>
                     <div class="content__card-title">${item.title}</div>
                     <div class="content__card-colors">
@@ -36,11 +38,12 @@ function showFavoritesCards() {
 
         spanColor.forEach(elem => {
             elem.style.backgroundColor += item.color;
-        })
-    })
-}
+        });
+    });
+    addToCart();
+};
 showFavoritesCards();
 
 button.addEventListener('click', () => {
-    button.classList.add('active')
+    button.classList.add('active');
 });

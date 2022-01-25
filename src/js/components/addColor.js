@@ -5,7 +5,7 @@ function addcolor() {
     newInput.classList.add('card__form-color');
     newInput.placeholder = 'Цвет, 000000';
     addColorBtn.before(newInput);
-}
+};
 
 addColorBtn.addEventListener('click', () => {
     addcolor();

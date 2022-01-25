@@ -10,14 +10,14 @@ error.classList.add('login-error');
 error.textContent = 'Вы ввели некорректные данные';
 
 if (localStorage.getItem('rememberData')) {
-    autoFill()
-} 
+    autoFill();
+};
 
 function autoFill() {
     let userData = JSON.parse(localStorage.getItem('rememberData'));
     inputMail.value = userData.email;
     inputPassword.value = userData.password;
-}
+};
 
 document.querySelector('.logIn__btn').addEventListener('click', () => {
     
@@ -25,7 +25,8 @@ document.querySelector('.logIn__btn').addEventListener('click', () => {
         "email": inputMail.value,
         "password": inputPassword.value,
         "returnSecureToken": true
-    }
+    };
+
     auth(config.fbAuth, config.fbAPI, inputMail.value, inputPassword.value).then(data => checkAuth(data));
     
     function checkAuth(data) {
@@ -37,8 +38,8 @@ document.querySelector('.logIn__btn').addEventListener('click', () => {
             inputMail.style.border = '1px solid rgb(168, 1, 1)';
             inputPassword.style.border = '1px solid rgb(168, 1, 1)';
             document.querySelector('.logIn__password').insertBefore(error, inputPassword.nextSibling);
-        }
-    }
+        };
+    };
 
     function optimizeData(data) {
         const expData = new Date(new Date().getTime() + +data.expiresIn * 1000);
@@ -46,9 +47,9 @@ document.querySelector('.logIn__btn').addEventListener('click', () => {
             email: data.email,
             expiresIn: expData,
             idToken: data.idToken
-        }
+        };
         return newObj;
-    }
+    };
 
     function rememberData() {
         let checkInput = document.querySelector('.input__memory');
@@ -56,8 +57,8 @@ document.querySelector('.logIn__btn').addEventListener('click', () => {
             let remeberObj = {
                 email: inputMail.value,
                 password: inputPassword.value
-            }
+            };
             localStorage.setItem('rememberData', JSON.stringify(remeberObj));
-        } 
-    }
+        }; 
+    };
 });

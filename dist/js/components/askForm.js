@@ -7,24 +7,27 @@ let askName = document.querySelector('.ask__name'),
 function askForm() {
     
     document.querySelector('.ask__btn').addEventListener('click', () => {
-        let userObj = {
-            name: `${askName.value}`,
-            phone: `${askPhone.value}`
-        }
-        postData(`${config.fbUrl}UsersData.json`, userObj);
-    
-        alert('Ваши данные получены, ожидайте звонка консультанта');
+        if (askName.value !== '' && askPhone.value !== '') {
+            let userObj = {
+                name: `${askName.value}`,
+                phone: `${askPhone.value}`
+            };
+            postData(`${config.fbUrl}UsersData.json`, userObj);
         
-        cleaningInput();
-    })
+            alert('Ваши данные получены, ожидайте звонка консультанта');
+            
+            cleaningInput();
+            window.location.reload();
+        } else {
+            document.querySelector('.ask__error').textContent = 'Вы не заполнили данные';
+        };
+    });
     
-}
-
-
+};
 
 function cleaningInput() {
     askName.value = '';
     askPhone.value = '';
-}
+};
 
 export {askForm};

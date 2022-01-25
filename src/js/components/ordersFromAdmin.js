@@ -22,17 +22,17 @@ function representOrders(order) {
                 <button id=${item[0]} class="orders__done">Подтвердить заказ</button>
             </td>
         `;
-    })
-}
+    });
+};
 
 function getTitle(products) {
     let out = '';
 
     products.forEach(elem => {
         out += `<div>${elem.title}</div>`;
-    })
+    });
     return out;
-}
+};
 
 function getPrice(products) {
     let out = '';

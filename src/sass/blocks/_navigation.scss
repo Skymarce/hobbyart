@@ -130,7 +130,7 @@
             color: #dbdbdb;
         }
     }
-    &__bin, &__orders {
+    &__cart, &__orders {
         position: relative;
         width: 114px;
         height: 38px;
@@ -164,7 +164,7 @@
             color: #dbdbdb;
         }
     }
-    &__amount-bin, &__amount-select, &__amount-orders {
+    &__amount-cart, &__amount-select, &__amount-orders {
         position: absolute;
         z-index: 5;
         top: -20%;

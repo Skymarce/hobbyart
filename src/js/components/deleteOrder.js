@@ -7,8 +7,8 @@ function deleteOrder() {
             deleteData(`${config.fbUrl}order/${item.id}.json`);
             alert('Заказ успешно обработан');
             window.location.reload();
-        })
-    })
-}
+        });
+    });
+};
 
 export {deleteOrder};

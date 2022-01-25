@@ -1,11 +1,11 @@
 import {getData} from "../services/getData.js";
-import {addToCard} from "./addToCard.js";
+import {addToCart} from "./addToCart.js";
 import {addToFavorites} from "./addToFavorites.js";
 
 import {config} from '../environments/environments.js';
 
 function showCard() {
-    getData(`${config.fbUrl}catalog.json`).then(catalog => {representCards(catalog), addToCard(), addToFavorites()});
+    getData(`${config.fbUrl}catalog.json`).then(catalog => {representCards(catalog), addToCart(), addToFavorites()});
 }
 showCard();
 
@@ -44,8 +44,8 @@ function representCards(catalog) {
 
         spanColor.forEach(item => {
             item.style.backgroundColor += `#${catalog[key].color}`;
-        })
-    }
-}
+        });
+    };
+};
 
 export {showCard};

@@ -3,16 +3,16 @@ import {openModal} from './modal.js';
 let amountFavorites = document.querySelector('.navigation__amount-select');
 
 function addToFavorites() {
-    let buttonsToFavorites = document.querySelectorAll('.content__card-btn-like');
-    let favorites = [];
-    let flag = false;
+    let buttonsToFavorites = document.querySelectorAll('.content__card-btn-like'),
+        favorites = [],
+        flag = false;
 
     buttonsToFavorites.forEach(item => {
         item.addEventListener('click', () => {
-            let img = item.parentElement.parentElement.parentElement.querySelector('.content__card-img-img').src;
-            let title = item.parentElement.parentElement.parentElement.querySelector('.content__card-title').textContent;
-            let color = item.parentElement.parentElement.parentElement.querySelector('.content__card-color').style.backgroundColor;
-            let price = item.parentElement.parentElement.parentElement.querySelector('.content__card-price').textContent;
+            let img = item.parentElement.parentElement.parentElement.querySelector('.content__card-img-img').src,
+                title = item.parentElement.parentElement.parentElement.querySelector('.content__card-title').textContent,
+                color = item.parentElement.parentElement.parentElement.querySelector('.content__card-color').style.backgroundColor,
+                price = item.parentElement.parentElement.parentElement.querySelector('.content__card-price').textContent;
 
             let favoritesProducts = {
                 img: img,
@@ -43,9 +43,9 @@ function addToFavorites() {
 
             item.src = '../../icons/like_active.svg';
             showAmountFavorites();
-        })
-    })
-}
+        });
+    });
+};
 
 
 

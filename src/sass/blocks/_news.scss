@@ -47,11 +47,11 @@
         }
     }
     &__cards {
-        position: relative;
+        /* position: relative;
         display: grid;
         grid-template-columns: repeat(auto-fill, 300px);
         justify-content: space-between;
-        align-items: center;
+        align-items: center; */
         &-prev {
             position: absolute;
             top: 244px;
@@ -74,7 +74,7 @@
         }
         &-title {
             position: absolute;
-            top: 441px;
+            top: 420px;
             left: 34px;
             font-weight: 600;
             font-size: 18px;
