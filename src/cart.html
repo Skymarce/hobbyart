@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__phone">
+                    <div class="header__phone-img">
+                        <img src="icons/header/phone.svg" alt="phone">
+                    </div>
+                    <div class="header__phone-number">
+                        <a href="tel:89247652820">+7 (924) 765 28 20</a>
+                    </div>
+                </div>
+                <div class="header__address">
+                    <div class="header__address-img">
+                        <img src="icons/header/gps.svg" alt="location">
+                    </div>
+                    <div class="header__address-location">
+                        г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”
+                    </div>
+                </div>
+                <div class="header__schedule">
+                    <div class="header__schedule-img">
+                        <img src="icons/header/clock.svg" alt="clock">
+                    </div>
+                    <div class="header__schedule-work">
+                        Ежедневно с 10:00 до 19:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation__wrapper">
+                <div class="navigation__menu">
+                    <ul class="navigation__menu-items">
+                        <li class="navigation__menu-item">
+                            <a href="catalog_macrame.html">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Бонусная программа
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navigation__logo">
+                    <a href="/index.html">
+                        <img src="icons/nav/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="navigation__user">
+                    <div class="navigation__user-input">
+                        <input class="searching" placeholder="Поиск товара" type="text">
+                        <img src="icons/nav/search.svg" alt="search">
+                    </div>
+                    <div class="navigation__login">
+                        <a href="admin.html" class="login">
+                            <img src="icons/nav/login.svg" alt="login">Войти
+                        </a>    
+                    </div>
+                    <div class="navigation__select">
+                        <a href="account.html" class="select"><img src="icons/nav/heart.svg" alt="select">Избранное</a>
+                        <div class="navigation__amount-select hide"></div>
+                    </div>
+                    <div class="navigation__cart">
+                        <a href="cart.html" class="cart">
+                            <img src="icons/nav/bag.svg" alt="cart">Корзина
+                        </a>
+                        <div class="navigation__amount-cart hide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__road">
+                    <div class="content__road-item">
+                        <a href="#">
+                            Главная 
+                        </a>
+                        <img src="icons/arrows/road_arrow.svg" alt="arrow">
+                    </div>
+                    <div class="content__road-item">
+                        <a href="#">
+                            Корзина
+                        </a>
+                    </div>
+                </div>
+                <div class="content__cart">
+                    <div class="content__cart-main">
+                        <div class="content__cart-list">
+                            <div class="content__cart-header">
+                                <div class="content__cart-title">Моя корзина</div>
+                                <button class="content__cart-clean">Очистить корзину</button>
+                            </div>
+                            <div class="content__cart-divider"></div>
+                            <div class="content__cart-wrap"></div>
+                        </div>
+                        <div class="content__cart-order">
+                            <div class="content__cart-order-wrap">
+                                <div class="content__cart-order-good">
+                                    <div class="content__cart-order-title">Товары, <span class="content__cart-order-title-amount">4 шт</span></div>
+                                    <div class="content__cart-order-divider"></div>
+                                    <div id="allprice" class="content__cart-order-price">1 184 ₽</div>
+                                </div>
+                                <div class="content__cart-order-discount">
+                                    <div class="content__cart-order-title">Скидка на товары</div>
+                                    <div class="content__cart-order-divider"></div>
+                                    <div id="discount" class="content__cart-order-price">35</div>
+                                </div>
+                                <div class="content__cart-order-bonus">
+                                    <div class="content__cart-order-bonus-title">Вам будет начислено бонусов: 
+                                        <span class="content__cart-order-bonus-sum">51</span>
+                                    </div>
+                                    <div class="content__cart-order-all">
+                                        <div class="content__cart-order-all-title">Итого: <br> 
+                                            <span class="content__cart-order-all-sum">1 149 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="content__cart-order-btn">Оформить заказ</button>
+                                <div class="content__cart-order-error"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__cart-additional">
+                        <div class="content__cart-title">С этим покупают</div>
+                        <div class="content__cart-additional-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="order hide">
+        <button class="order__close">
+            <img src="icons/close.svg" alt="close">
+        </button>
+        <div class="order__wrapper">
+            <div class="order__price"></div>
+            <div class="order__discount"></div>
+            <div class="order__bonus"></div>
+            <div class="order__products">Перечень ваших товаров:
+                <div class="order__products-list"></div>
+            </div>
+            <input class="order__name" type="text" placeholder="Имя">
+            <input class="order__phone" type="number" placeholder="Номер телефона">
+            <button class="order__sent">Отправить</button>
+        </div>  
+    </div>
+
+    <script src="js/components/productsFromCart.js" type="module"></script>
+    <script src="js/components/getDiscount.js" type="module"></script>
+    <script src="js/components/deleteFromCart.js" type="module"></script>
+    <script src="js/components/orderingFromCart.js" type="module"></script>
+    <script src="js/components/addToCart.js" type="module"></script>
+    <script src="js/components/addToFavorites.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.slick-slider{
+    min-width: 0;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news__cards {
+    position: relative;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 9px;
+    height: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-prev{
+    left: -38px;
+    background: url('../../icons/promo/arrow_prev.svg') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next{
+    right: -38px;
+    background: url('../../icons/promo/arrow_next.svg') 0 0 / 100% no-repeat;
+}
